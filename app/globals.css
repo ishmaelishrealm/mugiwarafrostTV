@@ -22,7 +22,17 @@ header {
 }
 
 input::placeholder {
-  color: #777;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+/* Navbar enhancements */
+nav a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-1px);
 }
 
 /* Gradient brand text */
