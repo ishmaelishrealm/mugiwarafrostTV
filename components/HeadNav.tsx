@@ -2,41 +2,33 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function HeadNav() {
   return (
-    <header className="bg-black text-white shadow-md">
-      <nav
-        className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-[80px]"
-        aria-label="Main Navigation"
-      >
-        {/* Left side: Logo + Search */}
-        <div className="flex items-center space-x-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/assets/Ishrealmanime.png"
-              alt="Ishrealmanime Logo"
-              width={80}
-              height={80}
-              className="object-contain"
-              priority
-            />
-          </Link>
-
-          {/* Search Box */}
-          <input
-            type="text"
-            className="w-[200px] h-[30px] rounded-md px-3 text-black bg-gray-100
-                       focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+    <header className="w-full bg-black text-white">
+      <nav className="flex items-center justify-between px-6 py-4">
+        {/* Left: Logo */}
+        <div className="flex items-center">
+          <Image
+            src="/assets/Ishrealmanime.png"
+            alt="Ishrealmanime"
+            width={80}
+            height={80}
+            className="object-contain"
+            priority
           />
         </div>
 
-        {/* Right side: Home nav */}
-        <div className="flex items-center space-x-6">
-          <Link
-            href="/"
-            className="hover:text-pink-400 transition-colors font-medium tracking-wide"
-          >
+        {/* Center: Search */}
+        <div className="flex items-center">
+          <input
+            type="text"
+            className="w-[200px] h-[32px] px-3 bg-gray-100 text-black rounded focus:outline-none focus:ring-2 focus:ring-pink-500"
+          />
+        </div>
+
+        {/* Right: Home */}
+        <div className="flex items-center">
+          <Link href="/" className="text-white hover:text-pink-400 transition-colors">
             Home
           </Link>
         </div>
