@@ -1,0 +1,18 @@
+{
+  "title": "Hero Without a Class Who Even Needs Skills",
+  "description": "In a world where everyone has a class and skills, one hero defies the system by succeeding without any formal training. Follow his journey as he proves that determination beats skills.",
+  "year": 2024,
+  "genre": ["Comedy", "Action", "Isekai"],
+  "episodes": {
+    "ep1": {
+      "title": "The Classless Hero",
+      "description": "A hero without a class discovers his unique path in a world obsessed with skills.",
+      "duration": "24:20"
+    },
+    "ep2": {
+      "title": "Skills Don't Matter",
+      "description": "Proving that determination and creativity beat traditional skills every time.",
+      "duration": "23:50"
+    }
+  }
+}

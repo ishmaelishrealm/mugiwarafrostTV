@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand Theme */
+:root {
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --accent: #ff4fd8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder {
+  color: #777;
+}
+
+/* Gradient brand text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), #ff80df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 8px;
+}

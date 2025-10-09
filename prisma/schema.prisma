@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Anime {
+  id            String     @id @default(cuid())
+  title         String
+  description   String?
+  bannerImage   String?      // optional promo/banner image
+  bunnyId       String?      // Bunny collection ID
+  featured      Boolean      @default(false)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  episodes      Episode[]
+}
+
+model Episode {
+  id            String     @id @default(cuid())
+  title         String
+  episodeNumber Int?
+  bunnyVideoId  String     @unique // Bunny video GUID - unique constraint for webhook upserts
+  playbackUrl   String     // Bunny iframe/hls link
+  thumbnail     String?
+  animeId       String
+  anime         Anime      @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@unique([animeId, episodeNumber])
+}

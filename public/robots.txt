@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to index the site
+Allow: /browse
+Allow: /search
+Allow: /watch/
+Allow: /show/
+
+# Block admin and API routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /auth/
+
+# Block private content
+Disallow: /account/
+Disallow: /upload/
+
+# Sitemap location
+Sitemap: https://sonoaactv.live/sitemap.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
+
+
+
+
+
