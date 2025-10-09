@@ -9,13 +9,13 @@ export default function Navbar() {
         className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-[80px]"
         aria-label="Main Navigation"
       >
-        {/* Left section: Logo + Search */}
+        {/* Left side: Logo + Search */}
         <div className="flex items-center space-x-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/assets/IshrealmAnimeNinjaLogoDesign.png"
-              alt="IshrealmAnime Logo"
+              src="/assets/Ishrealmanime.png"
+              alt="Ishrealmanime Logo"
               width={80}
               height={80}
               className="object-contain"
@@ -23,17 +23,15 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Search Bar */}
-          <div className="flex items-center">
-            <input
-              type="text"
-              className="w-[200px] h-[30px] rounded-md px-3 text-black bg-gray-100
-                         focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
-            />
-          </div>
+          {/* Search Box */}
+          <input
+            type="text"
+            className="w-[200px] h-[30px] rounded-md px-3 text-black bg-gray-100
+                       focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+          />
         </div>
 
-        {/* Right section: Home nav */}
+        {/* Right side: Home nav */}
         <div className="flex items-center space-x-6">
           <Link
             href="/"
