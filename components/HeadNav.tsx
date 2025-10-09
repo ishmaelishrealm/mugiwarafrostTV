@@ -6,35 +6,34 @@ export default function Navbar() {
   return (
     <header className="bg-black text-white shadow-md">
       <nav
-        className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-[70px]"
+        className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-[80px]"
         aria-label="Main Navigation"
       >
-        {/* Left section — Logo + Search */}
+        {/* Left section: Logo + Search */}
         <div className="flex items-center space-x-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/assets/IshrealmAnimeNinjaLogoDesign.png"
               alt="IshrealmAnime Logo"
-              width={60}
-              height={60}
+              width={80}
+              height={80}
               className="object-contain"
               priority
             />
           </Link>
 
           {/* Search Bar */}
-          <div className="hidden md:flex items-center">
+          <div className="flex items-center">
             <input
               type="text"
-              placeholder="Search anime..."
-              className="w-[200px] h-[32px] rounded-md px-3 text-black bg-gray-100 
-                         placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+              className="w-[200px] h-[30px] rounded-md px-3 text-black bg-gray-100
+                         focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
             />
           </div>
         </div>
 
-        {/* Right section — Nav links */}
+        {/* Right section: Home nav */}
         <div className="flex items-center space-x-6">
           <Link
             href="/"
@@ -42,14 +41,6 @@ export default function Navbar() {
           >
             Home
           </Link>
-
-          {/* Mobile search toggle (optional future enhancement) */}
-          <button
-            aria-label="Search"
-            className="md:hidden hover:text-pink-400 focus:outline-none"
-          >
-            🔍
-          </button>
         </div>
       </nav>
     </header>
