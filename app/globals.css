@@ -16,9 +16,54 @@ body {
   overflow-x: hidden;
 }
 
-/* Header styling */
+/* Header styling - Force override everything */
 header {
-  backdrop-filter: blur(10px);
+  backdrop-filter: none !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 999 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+nav {
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  width: 50% !important;
+  background: linear-gradient(#1f2937, #1f2937) padding-box, linear-gradient(45deg, #ff4fd8, #00ff00, #ff4fd8, #00ff00) border-box !important;
+  border: 3px solid transparent !important;
+  box-shadow: 0 0 20px rgba(255, 79, 216, 0.5), 0 0 40px rgba(0, 255, 0, 0.3), inset 0 1px 0 rgba(255, 79, 216, 0.3), inset 0 -1px 0 rgba(0, 255, 0, 0.3) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  z-index: 999 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 80px !important;
+  animation: glowPulse 2s ease-in-out infinite alternate !important;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 79, 216, 0.5), 0 0 40px rgba(0, 255, 0, 0.3), inset 0 1px 0 rgba(255, 79, 216, 0.3), inset 0 -1px 0 rgba(0, 255, 0, 0.3) !important;
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(255, 79, 216, 0.8), 0 0 60px rgba(0, 255, 0, 0.5), inset 0 1px 0 rgba(255, 79, 216, 0.5), inset 0 -1px 0 rgba(0, 255, 0, 0.5) !important;
+  }
+}
+
+/* Force spacing between navbar elements */
+nav div {
+  margin-right: 80px !important; /* 20 * 4px = 80px */
+}
+
+nav div:last-child {
+  margin-right: 0 !important;
 }
 
 input::placeholder {
@@ -29,10 +74,19 @@ input::placeholder {
 /* Navbar enhancements */
 nav a {
   transition: color 0.2s ease, transform 0.2s ease;
+  color: white !important;
+  font-weight: bold !important;
 }
 
 nav a:hover {
   transform: translateY(-1px);
+  color: #d1d5db !important;
+}
+
+/* Force slideshow section background */
+section[class*="relative h-[60vh]"] {
+  background-color: #d1d5db !important;
+  background: #d1d5db !important;
 }
 
 /* Gradient brand text */

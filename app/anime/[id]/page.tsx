@@ -234,7 +234,7 @@ export default function AnimeDetails() {
                       {episode.episodeNumber ? `Ep ${episode.episodeNumber}` : `Ep ${index + 1}`}
                     </div>
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
+                      <div className="bg-black/50 backdrop-blur-sm rounded-full p-3">
                         <Play className="w-8 h-8 text-white fill-current" />
                       </div>
                     </div>

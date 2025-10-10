@@ -175,7 +175,7 @@ export default function AnimeMapper() {
               <button className="bg-[#ff4fd8] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ff4fd8]/80 transition-colors">
                 {isPlaying ? 'Pause' : 'Play'}
               </button>
-              <button className="border border-gray-600 text-gray-300 px-6 py-2 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+              <button className="border border-gray-600 text-gray-300 px-6 py-2 rounded-lg font-semibold hover:bg-black/50 transition-colors">
                 + Add to Watchlist
               </button>
             </div>
@@ -330,7 +330,7 @@ function AnimeCard({
                 className={`w-full text-left px-3 py-2 rounded-md transition-colors ${
                   active
                     ? 'bg-gradient-to-r from-[#ff4fd8] to-[#ff84f5] text-white'
-                    : 'hover:bg-white/5 text-gray-200'
+                    : 'hover:bg-black/20 text-gray-200'
                 }`}
               >
                 <div className="space-y-1">
