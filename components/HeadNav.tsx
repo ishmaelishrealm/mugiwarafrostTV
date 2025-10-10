@@ -7,12 +7,12 @@ export default function HeadNav() {
     <header 
       className="w-full bg-transparent text-white !important" 
       style={{
-        backgroundColor: 'transparent !important', 
-        width: '100% !important',
-        display: 'block !important',
-        visibility: 'visible !important',
-        opacity: '1 !important',
-        zIndex: '999 !important'
+        backgroundColor: 'transparent', 
+        width: '100%',
+        display: 'block',
+        visibility: 'visible',
+        opacity: 1,
+        zIndex: 999
       }}
     >
       <nav 
@@ -20,16 +20,16 @@ export default function HeadNav() {
         style={{
           marginLeft: '25%', 
           marginRight: '25%', 
-          width: '50% !important', 
-          backgroundColor: '#1f2937 !important',
+          width: '50%', 
+          backgroundColor: '#1f2937',
           border: '3px solid transparent',
           background: 'linear-gradient(#1f2937, #1f2937) padding-box, linear-gradient(45deg, #ff4fd8, #00ff00, #ff4fd8, #00ff00) border-box',
           boxShadow: '0 0 20px rgba(255, 79, 216, 0.5), 0 0 40px rgba(0, 255, 0, 0.3), inset 0 1px 0 rgba(255, 79, 216, 0.3), inset 0 -1px 0 rgba(0, 255, 0, 0.3)',
-          display: 'flex !important',
-          visibility: 'visible !important',
-          opacity: '1 !important',
-          zIndex: '999 !important',
-          minHeight: '80px !important'
+          display: 'flex',
+          visibility: 'visible',
+          opacity: 1,
+          zIndex: 999,
+          minHeight: '80px'
         }}
       >
         {/* General Section: Logo + Search + Home */}

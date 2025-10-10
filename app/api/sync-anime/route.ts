@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 const BUNNY_API_KEY = "7f0a1d07-a8a4-4e07-af7ed42722ee-bfbd-4896";
 const LIBRARY_ID = "506159";

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 type Episode = {
   id: string;
@@ -259,10 +260,12 @@ function AnimeCard({
         onMouseLeave={handleMouseLeave}
         onClick={() => setOpen(!open)}
       >
-        <img
+        <Image
           ref={imgRef}
           src={anime.thumbnail ?? '/placeholder-thumb.png'}
           alt={anime.title}
+          width={300}
+          height={200}
           className="w-full h-full object-cover transition-opacity duration-300"
         />
         
