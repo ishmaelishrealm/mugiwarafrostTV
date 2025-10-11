@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import StreamPlayer from "@/components/player/StreamPlayer";
 import EpisodeBottom from "@/components/EpisodeBottom";
 
@@ -114,12 +115,12 @@ export default function AnimePlayerDemoPage() {
 
       {/* Back to Home */}
       <div className="w-full flex justify-center mt-8 mb-8">
-        <a 
+        <Link 
           href="/" 
           className="px-6 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-md transition-colors"
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </div>
   );
