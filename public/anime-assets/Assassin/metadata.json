@@ -1,0 +1,20 @@
+{
+  "title": "My Status as an Assassin Obviously Exceeds the Hero's",
+  "description": "A powerful assassin is reincarnated into a new world, but finds himself in a classless body. He must use his past life's skills to overcome new challenges.",
+  "year": 2023,
+  "genre": ["Fantasy", "Action", "Isekai"],
+  "episodes": {
+    "ep1": {
+      "title": "The Assassin's Awakening",
+      "duration": "24:30",
+      "description": "Lugh Tuatha Dé is reborn into a world of magic and swords, but his new life comes with a unique challenge."
+    }
+  },
+  "bunnycdn": {
+    "videoId": "e477f879-82c8-4e70-af77-512785ecc487",
+    "directPlayUrl": "https://iframe.mediadelivery.net/play/506159/e477f879-82c8-4e70-af77-512785ecc487",
+    "hlsPlaylistUrl": "https://vz-a01fffb9-e7a.b-cdn.net/e477f879-82c8-4e70-af77-512785ecc487/playlist.m3u8",
+    "thumbnailUrl": "https://vz-a01fffb9-e7a.b-cdn.net/e477f879-82c8-4e70-af77-512785ecc487/thumbnail_bb5d5785.jpg",
+    "previewAnimationUrl": "https://vz-a01fffb9-e7a.b-cdn.net/e477f879-82c8-4e70-af77-512785ecc487/preview.webp?v=1760085854"
+  }
+}

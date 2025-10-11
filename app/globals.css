@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand Theme */
+:root {
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --accent: #ff4fd8;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --muted-foreground: #a1a1aa;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* AnimeHeaven-style Player Container */
+.player-container {
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.2);
+  overflow: hidden;
+  max-width: 1400px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 60px rgba(255, 20, 147, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .player-container {
+    max-width: 95%;
+  }
+}
+
+/* Gradient brand text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), #ff80df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 8px;
+}
+
+/* Netflix-style horizontal scroll */
+.overflow-x-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Enhanced hover effects for anime cards */
+.anime-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
